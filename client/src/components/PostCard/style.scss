@@ -1,0 +1,49 @@
+@import 'src/variables';
+
+.post-card {
+  border: 1px solid $regent-gray;
+  border-radius: 5px;
+  background-color: $ebony-clay;
+  color: white !important;
+  margin-bottom: 20px;
+  display: block;
+  transition: $transition-default;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.02);
+  }
+
+  .ellipsis-multi-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  &__title-wrapper {
+    padding: 10px 20px;
+    border-bottom: 1px solid $regent-gray;
+  }
+
+  &__title {
+    @extend .ellipsis-multi-lines;
+    height: 52px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    -webkit-line-clamp: 2;
+  }
+
+  &__body-wrapper {
+    padding: 10px 20px;
+  }
+
+  &__body {
+    @extend .ellipsis-multi-lines;
+    height: 100px;
+    text-transform: capitalize;
+    -webkit-line-clamp: 4;
+    margin-bottom: 0;
+  }
+}

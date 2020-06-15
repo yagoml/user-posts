@@ -1,0 +1,10 @@
+@import 'src/variables';
+
+.post {
+  &__content {
+    background-color: $ebony-clay;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
