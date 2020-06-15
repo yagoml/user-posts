@@ -1,3 +1,3 @@
 # server
 
-Run server with: **Yarn start**
+Run server with: **yarn dev**
