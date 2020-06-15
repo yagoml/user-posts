@@ -2,4 +2,4 @@
 
 Run server:
 
-`yarn start`
+`yarn dev`
